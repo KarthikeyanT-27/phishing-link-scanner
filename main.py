@@ -27,11 +27,11 @@ if scheme=="http":
     malicious=True
     score+=5
     reasons.append("HTTP is a older version protocol iit may not be secure")
-if len(path)>=50:
+if len(path)>=100:
     malicious=True
     score+=10
     reasons.append("URL path length is too long")
-if length>75:
+if length>200:
     malicious=True
     score+=10
     reasons.append("URL is too long")
